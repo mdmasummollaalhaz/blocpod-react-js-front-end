@@ -40,6 +40,11 @@
 
 */
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 
 /*color*/
 
@@ -76,6 +81,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #131313;
+    margin: 0px;
+    padding: 0px;
 }
 
 #routerhang {
@@ -103,17 +110,6 @@ section {
     &.no-bottom {
         padding-bottom: 0 !important;
     }
-    // .small-border {
-    //     display: block;
-    //     width: 50px;
-    //     height: 2px;
-    //     background: $color;
-    //     border-left: none;
-    //     border-left-color: currentcolor;
-    //     border-right: none;
-    //     border-right-color: currentcolor;
-    //     margin: 18px auto 30px;
-    // }
     &.bg-gray {
         background: rgb(247, 244, 253);
     }
@@ -850,19 +846,19 @@ a {
         position: relative;
         text-align: center;
         a {
-            color: $white_soft !important;
+            color: $white !important;
             text-transform: none;
             font-weight: normal;
             letter-spacing: normal;
             display: block;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: solid 1px #03ffb32b;
             padding: 8px 20px 8px 20px;
             min-width: 210px;
             width: 100%;
             text-align: left;
             &:hover {
-                color: $black !important;
-                background: $color;
+                color: $color !important;
+                background: $color_more;
             }
             &:last-child {
                 border-bottom: none;
@@ -2862,7 +2858,7 @@ i.font60 {
 
 .nft_coll_pp i {
     font-size: 10px;
-    color: #ffffff;
+    color: $color_more;
     background: $color;
     border-radius: 100%;
     -moz-border-radius: 100%;
@@ -3066,7 +3062,7 @@ i.font60 {
     position: relative;
     bottom: 22px;
     font-size: 14px;
-    color: #ddd;
+    color: $gray;
     float: right;
     span {
         color: $gray;
@@ -3142,7 +3138,7 @@ i.font60 {
 }
 
 .author_list_pp i {
-    color: #ffffff;
+    color: $color_more;
     background: $color;
     font-size: 10px;
     padding: 3px;
@@ -3190,6 +3186,7 @@ i.font60 {
     column-gap: 20px;
     li {
         margin-bottom: 30px;
+        color: $color;
     }
     .author_list_pp {
         position: absolute;
