@@ -1,6 +1,9 @@
 import React from 'react';
 import Footer from '../components/footer';
 import { createGlobalStyle } from 'styled-components';
+import { Link } from '@reach/router';
+import { useState } from 'react';
+import useAuth from './../../context/useAuth';
 
 const GlobalStyles = createGlobalStyle`
   header#myHeader.navbar.sticky.white {
@@ -33,11 +36,26 @@ const GlobalStyles = createGlobalStyle`
     .item-dropdown .dropdown a{
       color: #fff !important;
     }
+
   }
 `;
 
-const logintwo= () => (
-<div>
+const LoginTwo= () => {
+    const {  singInUsingGoogle ,singInUsingFacebook, logInuser } = useAuth();
+    const [ email , setEmail ] = useState('');
+    const [ password , setPassword ] = useState('');
+    const handleContactForm = e =>{
+      e.preventDefault();
+      logInuser(email, password)
+    }
+    const handleEmailField = e =>{
+      setEmail(e.target.value)
+    } 
+    const handlePasswordField = e =>{
+      setPassword(e.target.value)
+    }
+    
+  return ( <div>
 <GlobalStyles/>
 
   <section className='jumbotron breadcumb no-bg' style={{backgroundImage: `url(${'./img/background/subheader.jpg'})`}}>
@@ -52,15 +70,17 @@ const logintwo= () => (
           <div className="col-lg-4 offset-lg-2 wow fadeIn" data-wow-delay=".5s">
             <div className="box-login">
               <h3 className="mb10">Sign In</h3>
-              <p>Login using an existing account or create a new account <span>here</span>.</p>
-              <form name="contactForm" id='contact_form' className="form-border" action='#'>
-
+              <p>Login using an existing account or create a new account <Link to="/register"><span>here</span>.</Link></p>
+              <form name="contactForm" id='contact_form' className="form-border" action='#' onSubmit={handleContactForm} >
                   <div className="field-set">
-                      <input type='text' name='email' id='email' className="form-control" placeholder="username"/>
+           
+                      <input type='text' name='email' id='email' className="form-control" placeholder="username" onBlur={handleEmailField}  />
+             
                   </div>
                 
                  <div className="field-set">
-                      <input type='password' name='password' id='password' className="form-control" placeholder="password"/>
+                      <input type='password' name='password' id='password' className="form-control" placeholder="password"  autoComplete="off" onBlur={handlePasswordField}   /> 
+                      
                   </div>
                 
                 <div className="field-set">
@@ -72,8 +92,8 @@ const logintwo= () => (
                 <div className="spacer-single"></div>
                   <ul className="list s3">
                       <li>Login with:</li>
-                      <li><span >Facebook</span></li>
-                      <li><span >Google</span></li>
+                      <li><span onClick={singInUsingFacebook}>Facebook</span></li>
+                      <li><span onClick={singInUsingGoogle}>Google</span></li>
                   </ul>
               </form>
             </div>
@@ -86,5 +106,5 @@ const logintwo= () => (
   <Footer />
 </div>
 
-);
-export default logintwo;
+)};
+export default LoginTwo;

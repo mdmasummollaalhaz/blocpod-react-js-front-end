@@ -1,6 +1,9 @@
 import React from 'react';
 import Footer from '../components/footer';
 import { createGlobalStyle } from 'styled-components';
+import { Link, useNavigate } from '@reach/router';
+import { useState } from 'react';
+import useAuth from './../../context/useAuth';
 
 const GlobalStyles = createGlobalStyle`
   header#myHeader.navbar.sticky.white {
@@ -33,12 +36,40 @@ const GlobalStyles = createGlobalStyle`
     .item-dropdown .dropdown a{
       color: #fff !important;
     }
+
   }
 `;
 
 
 
-const register= () => (
+const Register= () => {
+  
+  const { registerViaEmailandPassword } = useAuth()
+  const [ email, setEmail ] = useState("");
+  const [ userName, setUserName ] = useState("");
+  const [ password, setPassword ] = useState("");
+
+  const handleFormSubmit = e =>{
+      e.preventDefault();
+      registerViaEmailandPassword(email,password,userName)
+    // console.log("yesssss", name, email, userName,phone,password,rePass,"conform")
+  }
+
+  const handleField = e =>{
+      if( e.target.name === 'email'){
+        setEmail(e.target.value);
+      }
+      if( e.target.name === 'username'){
+        setUserName(e.target.value);
+      }
+  }
+  const handlePassField = e =>{
+      if( e.target.name == 'password'   ){
+        setPassword(e.target.value)
+      }
+  }
+  
+return (
 <div>
 <GlobalStyles />
 
@@ -64,7 +95,7 @@ const register= () => (
 
       <div className="spacer-10"></div>
 
-      <form name="contactForm" id='contact_form' className="form-border" action='#'>
+      <form name="contactForm" id='contact_form' className="form-border" action='#' onSubmit={handleFormSubmit}>
 
                         <div className="row">
 
@@ -78,41 +109,44 @@ const register= () => (
                             <div className="col-md-6">
                                 <div className="field-set">
                                     <label>Email Address:</label>
-                                    <input type='text' name='email' id='email' className="form-control"/>
+                                    <input type='text' name='email' id='email' className="form-control"  onBlur={handleField}/>
                                 </div>
                             </div>
 
                             <div className="col-md-6">
                                 <div className="field-set">
                                     <label>Choose a Username:</label>
-                                    <input type='text' name='username' id='username' className="form-control"/>
+                                    <input type='text' name='username' id='username' className="form-control" onBlur={handleField} />
                                 </div>
                             </div>
 
                             <div className="col-md-6">
                                 <div className="field-set">
                                     <label>Phone:</label>
-                                    <input type='text' name='phone' id='phone' className="form-control"/>
+                                    <input type='text' name='phone' id='phone' className="form-control" />
                                 </div>
                             </div>
 
                             <div className="col-md-6">
                                 <div className="field-set">
                                     <label>Password:</label>
-                                    <input type='text' name='password' id='password' className="form-control"/>
+                                    <input type='password' name='password' id='password' className="form-control" autoComplete="off" onBlur={handlePassField} />
                                 </div>
                             </div>
 
                             <div className="col-md-6">
                                 <div className="field-set">
                                     <label>Re-enter Password:</label>
-                                    <input type='text' name='re-password' id='re-password' className="form-control"/>
+                                    <input type='password' name='rePassword' id='re-password' className="form-control" autoComplete="off"/>
                                 </div>
                             </div>
 
                             <div className="col-md-12">
-                                <div id='submit' className="pull-left">
+                                <div id='submit' className="pull-left me-3">
                                     <input type='submit' id='send_message' value='Register Now' className="btn btn-main color-2" />
+                                </div>
+                                <div className="cutom-p">
+                                   Are You Already Member? Click <span className='custom-link-btn'> <Link to="/login">Here</Link></span>
                                 </div>
                                 
                                 <div className="clearfix"></div>
@@ -128,5 +162,5 @@ const register= () => (
   <Footer />
 </div>
 
-);
-export default register;
+)};
+export default Register;

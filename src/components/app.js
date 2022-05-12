@@ -15,11 +15,11 @@ import Create from './pages/create';
 import Create2 from './pages/create2';
 import Create3 from './pages/create3';
 import Createoption from './pages/createOptions';
-
-
-
 import { createGlobalStyle } from 'styled-components';
 import Activity from './pages/activity';
+import AuthProvider from './../context/AuthProvider';
+import Author from './pages/Author';
+
 
 const GlobalStyles = createGlobalStyle`
   :root {
@@ -46,31 +46,38 @@ const PosedRouter = ({ children }) => (
   </Location>
 );
 
+// Trying purpuss
+
+
+
 const app= () => (
   <div className="wraper">
   <GlobalStyles />
-    <Header/>
-      <PosedRouter>
-      <ScrollTop path="/">
-        <Home exact path="/">
-          <Redirect to="/home" />
-        </Home>
-        <Explore path="/explore" />
-        <Rangking path="/rangking" />
-        <Auction path="/auction" />
-        <Colection path="/author" />
-        <ItemDetail path="/nftdetails" />
-        <Wallet path="/wallet" />
-        <Login path="/login" />
-        <Register path="/register" />
-        <Create path="/create" />
-        <Create2 path="/create2" />
-        <Create3 path="/create3" />
-        <Createoption path="/createOptions" />
-        <Activity path="/activity" />
-        </ScrollTop>
-      </PosedRouter>
-    <ScrollToTopBtn />
+      <AuthProvider>
+        <Header/>
+          <PosedRouter>
+          <ScrollTop path="/">
+            <Home exact path="/">
+              <Redirect to="/home" />
+            </Home>
+            <Explore path="/explore" />
+            <Rangking path="/rangking" />
+            <Auction path="/auction" />
+            <Colection path="/author" />
+            <ItemDetail path="/nftdetails" />
+            <Wallet path="/wallet" />
+            <Login path="/login" />
+            <Register path="/register" />
+            <Create path="/create" />
+            <Create2 path="/create2" />
+            <Create3 path="/create3" />
+            <Createoption path="/createOptions" />
+            <Activity path="/activity" />
+            <Author path="/maruf" />
+            </ScrollTop>
+          </PosedRouter>
+      <ScrollToTopBtn /> 
+     </AuthProvider>
     
   </div>
 );
