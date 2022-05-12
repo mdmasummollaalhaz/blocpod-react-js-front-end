@@ -145,7 +145,7 @@ render() {
                   </div>
                   <div>
                     <h5><i className="fa fa-info-circle" aria-hidden="true"></i>
-                      <span className="icon-space">Profile image</span>
+                      <span className="icon-space">Profile Banner</span>
                       </h5>
                     <img src="./img/collections/coll-1.jpg" alt="" className="img-fluid" />
                   </div>

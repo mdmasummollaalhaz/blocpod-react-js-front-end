@@ -1,10 +1,10 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDB3aPa0MZyVvv-PMv8RmEJT2MhZn9r37s",
-  authDomain: "blocpod-3b9a8.firebaseapp.com",
-  projectId: "blocpod-3b9a8",
-  storageBucket: "blocpod-3b9a8.appspot.com",
-  messagingSenderId: "595945866841",
-  appId: "1:595945866841:web:1289e670c374df6956d348"
+  apiKey: "AIzaSyCvdAzM99ylQsOpTS-Dm9JJcYwiuDvrn3c",
+  authDomain: "blockchain-b7b32.firebaseapp.com",
+  projectId: "blockchain-b7b32",
+  storageBucket: "blockchain-b7b32.appspot.com",
+  messagingSenderId: "453345421057",
+  appId: "1:453345421057:web:679ed1a47a492dcabf1d00"
   };
 
   export default firebaseConfig;
