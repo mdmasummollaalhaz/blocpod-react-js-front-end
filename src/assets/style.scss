@@ -837,7 +837,6 @@ a {
 .item-dropdown {
     width: max-content;
     position: absolute;
-    left: -100px!important;
     background: $black;
     border-radius: 5px;
     overflow: hidden;
@@ -870,9 +869,6 @@ a {
             }
         }
     }
-}
-.line-none{
-    border-bottom: 0px!important;
 }
 
 .imgslickz {

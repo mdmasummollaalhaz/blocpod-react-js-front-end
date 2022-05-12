@@ -8,7 +8,6 @@
 }
 
 .custm-mini-button {
-    display: block;
     width: max-content;
     text-align: center;
     color: #000000 !important;
@@ -109,4 +108,12 @@ p {
 }
 .icon-space{
     margin-left: 5px;
+}
+// Header nav
+.line-none{
+    border-bottom: 0px!important;
+}
+.profile-dropdown{
+    position: absolute;
+    left: -120px!important;
 }

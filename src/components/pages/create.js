@@ -139,12 +139,14 @@ render() {
           <div className="col-lg-3 col-sm-6 col-xs-12">
                   <div className="mb-5">
                       <h5 className="mb-2"><i className="fa fa-info-circle" aria-hidden="true"></i>
-                            Profile image</h5>
+                            <span className="icon-space">Profile image</span>
+                            </h5>
                         <img src='./img/author/author-1.jpg' alt="" className="rounded-pill" />
                   </div>
                   <div>
                     <h5><i className="fa fa-info-circle" aria-hidden="true"></i>
-                      Profile Banner</h5>
+                      <span className="icon-space">Profile image</span>
+                      </h5>
                     <img src="./img/collections/coll-1.jpg" alt="" className="img-fluid" />
                   </div>
            </div>                                         
