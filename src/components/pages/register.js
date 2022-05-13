@@ -68,7 +68,7 @@ const Register= () => {
       }
   }
   if( user.uid ){
-    navigator('/')
+    navigator('/create')
   }
   
 return (
@@ -131,7 +131,7 @@ return (
 
                             <div className="col-md-6">
                                 <div className="field-set">
-                                    <label>Password:</label>
+                                    <label>Password: ( min - 6 password required )</label>
                                     <input type='password' name='password' id='password' className="form-control" autoComplete="off" onBlur={handlePassField} />
                                 </div>
                             </div>
