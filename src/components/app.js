@@ -64,21 +64,21 @@ const app= () => (
             <Explore path="/explore" />
             <Rangking path="/rangking" />
             <Auction path="/auction" />
-            <Colection path="/author" />
+            <Colection path="/colection" />
             <ItemDetail path="/nftdetails" />
             <Wallet path="/wallet" />
             <Login path="/login" />
             <Register path="/register" />
             <Create path="/create" />
-            <Create2 path="/create2" />
-            <Create3 path="/create3" />
+            <Create2 path="/single" />
+            <Create3 path="/multiple" />
             <Createoption path="/createOptions" />
             <Activity path="/activity" />
-            <Author path="/author" />         
+            {/* <Author path="/author" />          */}
             <NotFound default />
             </ScrollTop>
           </PosedRouter>
-      <ScrollToTopBtn /> 
+      <ScrollToTopBtn />
      </AuthProvider>
     
   </div>
