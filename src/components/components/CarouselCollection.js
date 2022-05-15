@@ -73,13 +73,13 @@ export default class Responsive extends Component {
                       <span><img src="./img/collections/coll-1.jpg" className="lazy img-fluid" alt=""/></span>
                   </div>
                   <div className="nft_coll_pp">
-                      <Link to="/colection">
+                      <Link to="/author">
                         <span><img className="lazy" src="./img/author/author-1.jpg" alt=""/></span>
                       </Link>
                       <i className="fa fa-check"></i>
                   </div>
                   <div className="nft_coll_info">
-                           <Link to="/colection">
+                           <Link to="/author">
                             <span><h4>Abstraction</h4></span>
                           </Link>
                       <span>ERC-192</span>
@@ -93,13 +93,13 @@ export default class Responsive extends Component {
                       <span><img src="./img/collections/coll-2.jpg" className="lazy img-fluid" alt=""/></span>
                   </div>
                   <div className="nft_coll_pp">
-                      <Link to="/colection">
+                      <Link to="/author">
                       <img className="lazy" src="./img/author/author-2.jpg" alt=""/>
                       </Link>
                       <i className="fa fa-check"></i>
                   </div>
                   <div className="nft_coll_info">
-                        <Link to="/colection">
+                        <Link to="/author">
                             <span><h4>Patternlicious</h4></span>
                           </Link>
                       <span>ERC-61</span>
@@ -113,13 +113,13 @@ export default class Responsive extends Component {
                       <span><img src="./img/collections/coll-3.jpg" className="lazy img-fluid" alt=""/></span>
                   </div>
                   <div className="nft_coll_pp">
-                  <Link to="/colection">
+                  <Link to="/author">
                             <span><img className="lazy" src="./img/author/author-3.jpg" alt=""/></span>
                           </Link>
                       <i className="fa fa-check"></i>
                   </div>
                   <div className="nft_coll_info">
-                  <Link to="/colection">
+                  <Link to="/author">
                         <span> <h4>Skecthify</h4></span>
                       </Link>
                       
@@ -134,14 +134,14 @@ export default class Responsive extends Component {
                       <span><img src="./img/collections/coll-4.jpg" className="lazy img-fluid" alt=""/></span>
                   </div>
                   <div className="nft_coll_pp">
-                         <Link to="/colection">
+                         <Link to="/author">
                             <span><img className="lazy" src="./img/author/author-4.jpg" alt=""/></span>
                           </Link>
                       
                       <i className="fa fa-check"></i>
                   </div>
                   <div className="nft_coll_info">
-                        <Link to="/colection">
+                        <Link to="/author">
                             <span><h4>Cartoonism</h4></span>
                           </Link>
                       
@@ -156,13 +156,13 @@ export default class Responsive extends Component {
                       <span><img src="./img/collections/coll-5.jpg" className="lazy img-fluid" alt=""/></span>
                   </div>
                   <div className="nft_coll_pp">
-                           <Link to="/colection">
+                           <Link to="/author">
                               <span><img className="lazy" src="./img/author/author-5.jpg" alt=""/></span>
                           </Link>
                       <i className="fa fa-check"></i>
                   </div>
                   <div className="nft_coll_info">
-                           <Link to="/colection">
+                           <Link to="/author">
                             <span><h4>Virtuland</h4></span>
                           </Link>
                       <span>ERC-85</span>
@@ -176,14 +176,14 @@ export default class Responsive extends Component {
                       <span><img src="./img/collections/coll-6.jpg" className="lazy img-fluid" alt=""/></span>
                   </div>
                   <div className="nft_coll_pp">
-                         <Link to="/colection">
+                         <Link to="/author">
                             <span><img className="lazy" src="./img/author/author-6.jpg" alt=""/></span>
                           </Link>
                       
                       <i className="fa fa-check"></i>
                   </div>
                   <div className="nft_coll_info">
-                        <Link to="/colection">
+                        <Link to="/author">
                             <span><h4>Papercut</h4></span>
                         </Link>
                       <span>ERC-42</span>

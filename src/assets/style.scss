@@ -73,7 +73,8 @@ html {
 }
 
 * {
-    font-family: "roc-grotesk", sans-serif;
+    // font-family: "roc-grotesk", sans-serif;
+    font-family: "termina",sans-serif;
 }
 
 body {
@@ -3560,7 +3561,7 @@ i.font60 {
 }
 
 .profile_avatar i {
-    color: #ffffff;
+    color: #000000;
     background: $color;
     margin: 110px 0 0 110px;
     display: block;
