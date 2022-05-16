@@ -62,19 +62,19 @@ const app= () => (
               <Redirect to="/home" />
             </Home>
             <Explore path="/explore" />
-            <Rangking path="/rangking" />
-            <Auction path="/auction" />
-            <Colection path="/colection" />
-            <ItemDetail path="/nftdetails" />
+            <Rangking path="/#rangking" />
+            <Auction path="/#auction" />
+            <Colection path="/#colection" />
+            <ItemDetail path="/#nftdetails" />
             <Wallet path="/wallet" />
             <Login path="/login" />
             <Register path="/register" />
             <Create path="/create" />
-            <Create2 path="/single" />
-            <Create3 path="/multiple" />
-            <Createoption path="/createOptions" />
-            <Activity path="/activity" />
-            <Author path="/author" />     
+            <Create2 path="/#single" />
+            <Create3 path="/#multiple" />
+            <Createoption path="/#createOptions" />
+            <Activity path="/#activity" />
+            <Author path="/author" />
             <NotFound default />
             </ScrollTop>
           </PosedRouter>
