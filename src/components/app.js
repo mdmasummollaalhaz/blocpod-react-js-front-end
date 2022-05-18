@@ -18,8 +18,9 @@ import Createoption from './pages/createOptions';
 import { createGlobalStyle } from 'styled-components';
 import Activity from './pages/activity';
 import AuthProvider from './../context/AuthProvider';
-import Author from './pages/Author';
 import NotFound from './pages/notfound';
+import Author from './pages/Author'
+
 
 
 const GlobalStyles = createGlobalStyle`
@@ -64,21 +65,21 @@ const app= () => (
             <Explore path="/explore" />
             <Rangking path="/#rangking" />
             <Auction path="/#auction" />
-            <Colection path="/#colection" />
-            <ItemDetail path="/#nftdetails" />
+            <Colection path="/colection" />
+            <ItemDetail path="/nftdetails" />
             <Wallet path="/wallet" />
             <Login path="/login" />
             <Register path="/register" />
             <Create path="/create" />
-            <Create2 path="/#single" />
-            <Create3 path="/#multiple" />
-            <Createoption path="/#createOptions" />
+            <Create2 path="/single" />
+            <Create3 path="/multiple" />
+            <Createoption path="/createoption" />
             <Activity path="/#activity" />
             <Author path="/author" />
             <NotFound default />
             </ScrollTop>
           </PosedRouter>
-      <ScrollToTopBtn />
+      <ScrollToTopBtn /> 
      </AuthProvider>
     
   </div>

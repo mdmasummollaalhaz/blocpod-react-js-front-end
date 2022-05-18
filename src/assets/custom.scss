@@ -54,7 +54,13 @@ p {
     color: #fff;
 }
 
-//New Items Section Css 
+//New Items Section Css
+.nftitemdetailsbox{
+    background-color: #0d0c0c00;
+    border: 1px solid rgb(3 255 179 / 17%);
+    border-radius: 10px;
+    width: 31%;
+}
 .nft__item_like span {
     color: #ffffff;
 }
@@ -68,6 +74,10 @@ p {
     line-height: 28px;
     color: #E7E9EA;
 }
+.nftdetailsbold{
+    font-weight: 500;
+}
+
 
 //Footer Part Css Here
 .custon-color-whilte-footer {
@@ -134,4 +144,42 @@ p {
     margin-top: 10px;
     font-weight: 700;
     font-size: 18px;
+}
+
+//Custom modal are here
+.custm_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffffffa8;
+    z-index: 111111111111111111!important;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}
+
+.custm_modal_body {
+    width: 37%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin: 0px auto;
+}
+
+.custm_modal_body h3 {
+    color: #000000!important;
+}
+
+.custm_modal_body .closebtn {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.custm_modal_field {
+    border: 1.5px solid #373938;
+}
+.quantitybold{
+    font-weight: 500;
+    color: #000;
 }

@@ -70,7 +70,9 @@ export default class Responsive extends Component {
             <CustomSlide className='itm' index={1}>
               <div className="nft_coll">
                   <div className="nft_wrap">
+                      <Link to="colection">
                       <span><img src="./img/collections/coll-1.jpg" className="lazy img-fluid" alt=""/></span>
+                      </Link>
                   </div>
                   <div className="nft_coll_pp">
                       <Link to="/author">
@@ -90,7 +92,9 @@ export default class Responsive extends Component {
             <CustomSlide className='itm' index={2}>
               <div className="nft_coll">
                   <div className="nft_wrap">
+                  <Link to="colection">
                       <span><img src="./img/collections/coll-2.jpg" className="lazy img-fluid" alt=""/></span>
+                      </Link>
                   </div>
                   <div className="nft_coll_pp">
                       <Link to="/author">
@@ -110,7 +114,9 @@ export default class Responsive extends Component {
             <CustomSlide className='itm' index={3}>
               <div className="nft_coll">
                   <div className="nft_wrap">
+                  <Link to="colection">
                       <span><img src="./img/collections/coll-3.jpg" className="lazy img-fluid" alt=""/></span>
+                      </Link>
                   </div>
                   <div className="nft_coll_pp">
                   <Link to="/author">
@@ -153,7 +159,9 @@ export default class Responsive extends Component {
             <CustomSlide className='itm' index={5}>
               <div className="nft_coll">
                   <div className="nft_wrap">
+                  <Link to="colection">
                       <span><img src="./img/collections/coll-5.jpg" className="lazy img-fluid" alt=""/></span>
+                      </Link>
                   </div>
                   <div className="nft_coll_pp">
                            <Link to="/author">
@@ -173,7 +181,9 @@ export default class Responsive extends Component {
             <CustomSlide className='itm' index={6}>
               <div className="nft_coll">
                   <div className="nft_wrap">
+                  <Link to="colection">
                       <span><img src="./img/collections/coll-6.jpg" className="lazy img-fluid" alt=""/></span>
+                      </Link>
                   </div>
                   <div className="nft_coll_pp">
                          <Link to="/author">

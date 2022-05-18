@@ -73,7 +73,6 @@ html {
 }
 
 * {
-    // font-family: "roc-grotesk", sans-serif;
     font-family: "termina",sans-serif;
 }
 
@@ -1810,7 +1809,6 @@ footer {
                 border-radius: 5px 0 0 5px;
                 color: #000;
                 background: rgba(255, 255, 255, .1);
-                // border: solid 1px #333333;
                 outline: none;
                 border-right-color: rgb(51, 51, 51);
                 border-right-style: solid;
@@ -3007,7 +3005,7 @@ i.font60 {
     position: relative;
     padding: 20px;
     margin: 10px;
-    border: solid 1px #03ffb32b;
+    border: 1px solid #03ffb32b;
     border-radius: 15px;
     -moz-border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -3495,7 +3493,7 @@ i.font60 {
             float: left;
             width: 60px;
             background: $color;
-            color: #000000;
+            color: #000;
             display: table-cell;
             padding: 13px 0;
             border-radius: 0 5px 5px 0;
@@ -3561,7 +3559,7 @@ i.font60 {
 }
 
 .profile_avatar i {
-    color: #000000;
+    color: #ffffff;
     background: $color;
     margin: 110px 0 0 110px;
     display: block;
@@ -3679,6 +3677,7 @@ i.font60 {
 
 .item_info {
     padding-left: 10px;
+    color:#fff;
     .de_countdown {
         position: relative;
         display: inline-block;
@@ -3702,13 +3701,14 @@ i.font60 {
             font-size: 14px;
             text-align: center;
             min-width: 80px;
-            background: rgba(131, 100, 226, .1);
+            background: rgb(1 255 179);
+            color: #000;
             border-radius: 3px;
             -moz-border-radius: 3px;
             -webkit-border-radius: 3px;
             i {
                 margin-right: 5px;
-                color: rgba(0, 0, 0, 0.5);
+                color: #000;;
             }
         }
     }
@@ -3719,7 +3719,7 @@ i.font60 {
     .item_author .author_list_info {
         padding-top: 10px;
         padding-left: 70px;
-        color: #1a1b1e;
+        color: #fff;
         font-weight: bold;
     }
     .de_nav {

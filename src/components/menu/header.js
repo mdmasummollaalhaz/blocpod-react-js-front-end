@@ -186,7 +186,7 @@ const Header= function() {
                             {openMenu && (
                             <div className='item-dropdown'>
                               <div className="dropdown" onClick={closeMenu}>
-                                <NavLink to="#">All NFTs</NavLink>
+                                <NavLink to="/nftdetails">All NFTs</NavLink>
                                 <NavLink to="#">Art</NavLink>
                                 <NavLink to="#">Music</NavLink>
                                 <NavLink to="#">Photography</NavLink>

@@ -103,7 +103,7 @@ const explore= () => (
         <div className='row'>
           <div className='col-lg-12'>
 
-            <div className="items_filter centerEl">
+            <div className="items_filter centerEl text-center">
                 <div className='dropdownSelect one'><Select className='select1' styles={customStyles} menuContainerStyle={{'zIndex': 999}} defaultValue={options[0]} options={options} /></div>
                 <div className='dropdownSelect two'><Select className='select1' styles={customStyles} defaultValue={options1[0]} options={options1} /></div>
             </div>
