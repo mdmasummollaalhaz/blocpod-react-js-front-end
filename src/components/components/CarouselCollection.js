@@ -137,7 +137,9 @@ export default class Responsive extends Component {
             <CustomSlide className='itm' index={4}>
               <div className="nft_coll">
                   <div className="nft_wrap">
+                  <Link to="colection">
                       <span><img src="./img/collections/coll-4.jpg" className="lazy img-fluid" alt=""/></span>
+                      </Link>
                   </div>
                   <div className="nft_coll_pp">
                          <Link to="/author">
