@@ -153,7 +153,7 @@ p {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #ffffffa8;
+    background-color: #1c1c1ca6;
     z-index: 111111111111111111!important;
     display: flex!important;
     justify-content: center;
@@ -162,13 +162,13 @@ p {
 
 .custm_modal_body {
     width: 37%;
-    background-color: #ffffff;
+    background-color: #000000;
     border-radius: 5px;
     margin: 0px auto;
 }
 
 .custm_modal_body h3 {
-    color: #000000!important;
+    color: #fff!important;
 }
 
 .custm_modal_body .closebtn {
@@ -181,5 +181,5 @@ p {
 }
 .quantitybold{
     font-weight: 500;
-    color: #000;
+    color: #fff;
 }

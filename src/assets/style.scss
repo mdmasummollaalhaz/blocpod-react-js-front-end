@@ -2375,13 +2375,14 @@ address {
         width: 48%;
         font-weight: bold;
         cursor: pointer;
+        color: #fff;
         i {
             height: 32px;
             width: 32px;
             padding: 9px 0;
             text-align: center;
             border-radius: 100%;
-            background: #eee;
+            background: #282727;
             color: $color;
             margin-right: 10px;
         }
@@ -2400,6 +2401,7 @@ address {
         position: relative;
         padding-right: 100px;
         background: rgba(131, 100, 226, .07);
+        border: 1px solid rgba(3,255,179,.16862745098039217);
         img {
             width: 80px;
             position: absolute;
@@ -2431,8 +2433,10 @@ address {
         }
         .act_list_text {
             padding-left: 100px;
+            color: #fff;
             .act_list_date {
                 display: block;
+                color: #fff;
             }
             h4 {
                 font-size: 16px;
@@ -2449,8 +2453,8 @@ address {
             right: 20px;
             top: 30%;
             font-size: 26px;
-            color: $color;
-            background: #fff;
+            color: #000000;
+            background: #03ffb3;
             height: 48px;
             width: 48px;
             padding: 6px 0;
@@ -4323,7 +4327,7 @@ img.img-rounded {
         padding-bottom: 15px;
     }
     tr {
-        border-bottom: solid 1px rgba(0, 0, 0, .1) !important;
+        border-bottom: 1px solid rgba(3,255,179,.16862745098039217) !important;
         &.spacer-single {
             border-bottom: 0 !important;
         }
@@ -4333,6 +4337,7 @@ img.img-rounded {
     }
     td {
         padding: 30px 0;
+        color: #01ffb3;
     }
     .coll_list_pp {
         position: absolute;
@@ -4343,6 +4348,7 @@ img.img-rounded {
         margin-top: -12px;
         z-index: 10;
         left: 0;
+        color: #01ffb3;
         img {
             width: 100%;
             border-radius: 100% !important;
@@ -4350,7 +4356,7 @@ img.img-rounded {
             z-index: 1;
         }
         i {
-            color: #ffffff;
+            color: #000;
             background: $color;
             font-size: 10px;
             padding: 3px;
@@ -4364,6 +4370,7 @@ img.img-rounded {
     tbody th {
         position: relative;
         padding-left: 75px;
+        color: #01ffb3;
     }
     .d-plus {
         color: #34c77b;
@@ -4379,9 +4386,9 @@ img.img-rounded {
     border-radius: 3px;
     li {
         span {
-            border: solid 1px rgba(0, 0, 0, .1);
+            border: 1px solid rgba(3,255,179,.16862745098039217);
             padding: 15px 20px 15px 20px;
-            color: $general;
+            color: #01ffb3;
             cursor: pointer;
         }
     }

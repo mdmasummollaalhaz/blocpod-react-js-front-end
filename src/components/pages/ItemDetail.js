@@ -204,23 +204,23 @@ return (
                                     <div className='custm_modal_body p-3'>
                                         <div className='d-flex justify-content-between align-items-center'>
                                             <h3 className='m-0'>Checkout </h3> 
-                                            <span className='closebtn' onClick={handleBuyModal} style={{cursor:"pointer"}}>&times;</span>
+                                            <span className='closebtn' onClick={handleBuyModal} style={{cursor:"pointer",  color:"white"}}>&times;</span>
                                         </div>
-                                        <p className='custom_modal_title text-black'>You are about to perchase a <span>AnimeSaliorClub #304</span> From <span>Monica Luacas</span></p>
-                                        <span>Enter quantity. <span className="quantitybold">10 Available</span></span>
+                                        <p className='custom_modal_title text-white'>You are about to perchase a <span>AnimeSaliorClub #304</span> From <span>Monica Luacas</span></p>
+                                        <span className="text-white">Enter quantity. <span className="quantitybold">10 Available</span></span>
                                         <div className='from-group'>
                                             <input type="number" className='form-control custm_modal_field' placeholder="1"/>
                                         </div>
                                         <div className='mb-5'>
-                                            <div className='d-flex justify-content-between align-items-center'> 
+                                            <div className='d-flex text-white justify-content-between align-items-center'> 
                                                 <span>Your balance</span>
                                                 <span className="quantitybold">10.67856 ETH</span>
                                             </div>
-                                            <div className='d-flex justify-content-between align-items-center'> 
+                                            <div className='d-flex text-white justify-content-between align-items-center'> 
                                                 <span>Service Fee 2.5%</span>
                                                 <span className="quantitybold">0.000325 ETH</span>
                                             </div>
-                                            <div className='d-flex justify-content-between align-items-center'> 
+                                            <div className='d-flex text-white justify-content-between align-items-center'> 
                                                 <span>Your will pay</span>
                                                 <span className="quantitybold">0.013325 ETH</span>
                                             </div>
@@ -236,33 +236,33 @@ return (
                                     {
                                         <div className={priceModalStatus ? `custm_modal d-block`: `d-none`}>
                                             <div className='custm_modal_body p-3'>
-                                                <div className='d-flex justify-content-between align-items-center'>
+                                                <div className='d-flex text-white justify-content-between align-items-center'>
                                                     <h3 className='m-0'>Place a Bid </h3> 
-                                                    <span className='closebtn' onClick={handlePriceModal} style={{cursor:"pointer"}}>&times;</span>
+                                                    <span className='closebtn' onClick={handlePriceModal} style={{cursor:"pointer", color:"white"}}>&times;</span>
                                                 </div>
-                                                <p className='custom_modal_title text-black'>You are about to place a bid for <span>AnimeSaliorClub #304</span> From <span>Monica Luacas</span></p>
-                                                <span>Your bid (ETH) </span>
+                                                <p className='custom_modal_title text-white'>You are about to place a bid for <span>AnimeSaliorClub #304</span> From <span>Monica Luacas</span></p>
+                                                <span className="text-white">Your bid (ETH) </span>
                                                 <div className='from-group'>
                                                     <input type="text" className='form-control custm_modal_field' placeholder="Enter bid"/>
                                                 </div>
-                                                <span>Enter quantity. <span className="quantitybold">10 Available</span></span>
+                                                <span className="text-white">Enter quantity. <span className="quantitybold">10 Available</span></span>
                                                 <div className='from-group'>
                                                     <input type="number" className='form-control custm_modal_field' placeholder="1"/>
                                                 </div>
                                                 <div className='mb-5'>
-                                                    <div className='d-flex justify-content-between align-items-center'> 
+                                                    <div className='d-flex text-white justify-content-between align-items-center'> 
                                                             <span>Your bilding balance</span>
                                                             <span className="quantitybold">0.013325 ETH</span>
                                                         </div>
-                                                    <div className='d-flex justify-content-between align-items-center'> 
+                                                    <div className='d-flex text-white justify-content-between align-items-center'> 
                                                         <span>Your balance</span>
                                                         <span className="quantitybold">10.67856 ETH</span>
                                                     </div>
-                                                    <div className='d-flex justify-content-between align-items-center'> 
+                                                    <div className='d-flex text-white justify-content-between align-items-center'> 
                                                         <span>Service Fee 2.5%</span>
                                                         <span className="quantitybold">0.000325 ETH</span>
                                                     </div>
-                                                    <div className='d-flex justify-content-between align-items-center'> 
+                                                    <div className='d-flex text-white justify-content-between align-items-center'> 
                                                         <span>Your will pay</span>
                                                         <span className="quantitybold">0.013325 ETH</span>
                                                     </div>

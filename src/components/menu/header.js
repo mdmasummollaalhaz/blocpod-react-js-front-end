@@ -211,8 +211,9 @@ const Header= function() {
                             {openMenu1 && (
                             <div className='item-dropdown'>
                               <div className="dropdown" onClick={closeMenu1}>
-                              <NavLink to="#">Activity</NavLink>
-                              <NavLink to="#">Rankings</NavLink>
+                              <NavLink to="/activity">Activity</NavLink>
+                              <NavLink to="/rangking">Rankings</NavLink>
+                              <NavLink to="/auction">Live Auction</NavLink>
                               </div>
                             </div>
                           )}
