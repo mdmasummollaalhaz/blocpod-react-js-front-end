@@ -13,7 +13,8 @@ const Wallet= () => {
     const {user} = useAuth()
     const handleWallet = () =>{
         if( user.uid ){
-            handleCongratulationModal()
+            // handleCongratulationModal()
+            alert("Congratulation! You are getting A Wallet");
         }else{
             navigator('/login')
         }
@@ -88,18 +89,18 @@ return (
         </span>
     </div>    
     {
+        /*
         <div className={openMassage ? `custm_modal d-block`: `d-none`}>
             <div className='custm_modal_body p-3'>
                 <div className='d-flex justify-content-between align-items-center'>
-                    <h3 className='m-0'>Place a Bid </h3> 
-                    <span className='closebtn' onClick={handleCongratulationModal} style={{cursor:"pointer"}}>&times;</span>
+                    <span className='closebtn' onClick={handleCongratulationModal} style={{cursor:"pointer", color:"white"}}>&times;</span>
                 </div>
-               <h4 className='text-black'>Congratulation ! you earn a Wallete</h4>
-                <div>
-                    <button className='w-100'>Place a bid</button>
-                </div>
+               <div className='py-5'>
+                    <h4 className='text-white'>Congratulation ! you earn a Wallete</h4>
+               </div>
             </div>
         </div>
+        */
     }                              
 </div>
 )};
