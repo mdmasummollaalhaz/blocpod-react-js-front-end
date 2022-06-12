@@ -38,6 +38,16 @@ p {
 .cursor-pointer {
     cursor: pointer;
 }
+.btn-border{
+    color: #03FFB3 !important;
+    background: #03ffb300;
+    border: 1px solid #03FFB3;
+}
+.btn-border:hover{
+    color: #03FFB3 !important;
+    background: #03ffb300;
+    border: 1px solid #03FFB3;
+}
 
 // Hero Section Code Here
 .hero-section {
@@ -56,8 +66,8 @@ p {
 
 //New Items Section Css
 .nftitemdetailsbox{
-    background-color: #0d0c0c00;
-    border: 1px solid rgb(3 255 179 / 17%);
+    background-color: #000;
+    // border: 1px solid rgb(3 255 179 / 17%);
     border-radius: 10px;
     width: 31%;
 }
@@ -75,7 +85,11 @@ p {
     color: #E7E9EA;
 }
 .nftdetailsbold{
-    font-weight: 500;
+    // font-family: 'Newake';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 90%;
 }
 
 
@@ -182,4 +196,19 @@ p {
 .quantitybold{
     font-weight: 500;
     color: #fff;
+}
+h2{
+    font-size: 40px;
+}
+h3{
+    font-size: 32px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 20px;
+}
+h6{
+    font-size: 20px;
 }

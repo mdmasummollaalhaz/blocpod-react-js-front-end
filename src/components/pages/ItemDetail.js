@@ -188,7 +188,7 @@ return (
                                             <small>($253.67)</small>
                                             <div className="d-flex mt-3">
                                                <span className="btn-main lead me-3" onClick={handleBuyModal}>Buy Now</span>
-                                               <span className="btn-main lead" onClick={handlePriceModal}>Place a Bid</span>
+                                               <span className="btn-main lead btn-border" onClick={handlePriceModal}>Place a Bid</span>
                                             </div>
                                         </div>
                                 </div>
