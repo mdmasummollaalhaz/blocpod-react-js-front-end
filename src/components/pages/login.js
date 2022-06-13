@@ -83,7 +83,7 @@ const LoginTwo= () => {
           <div className="col-lg-4 offset-lg-2 wow fadeIn" data-wow-delay=".5s">
             <div className="box-login">
               <h3 className="mb10">Sign In</h3>
-              <p>Login using an existing account or create a new account <Link to="/register"><span>here</span>.</Link></p>
+              <p>Login using an existing account or create a new account <Link to="/register"><span>here</span></Link></p>
               <form name="contactForm" id='contact_form' className="form-border" action='#' onSubmit={handleContactForm} >
                   <div className="field-set">
            

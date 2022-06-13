@@ -112,7 +112,7 @@ const Header= function() {
           </div>
 
           <div className='search'>
-            <input id="quick_search" className="xs-hide" name="quick_search" placeholder="search item here..." type="text" />
+            <input id="quick_search" className="xs-hide" name="quick_search" placeholder="Search item here..." type="text" />
           </div>
                     
               <BreakpointProvider>

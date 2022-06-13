@@ -73,7 +73,8 @@ html {
 }
 
 * {
-    font-family: "termina",sans-serif;
+    // font-family: "termina",sans-serif;
+    font-family: 'Manrope-Regular';
 }
 
 body {
@@ -760,10 +761,13 @@ p.lead {
     border-radius: 5px;
     letter-spacing: normal;
     outline: 0;
-    font-weight: 800;
+    font-weight: 800!important;
     text-decoration: none;
-    padding: 8px 40px;
+    padding: 16px 30px;
     font-size: 16px;
+    letter-spacing: 3%;
+    line-height: 26px;
+    text-transform: uppercase;
     border: none;
     cursor: pointer;
     box-shadow: 2px 2px 20px 0px rgba(131, 100, 226, 0);
@@ -1150,12 +1154,12 @@ a {
         #quick_search {
             padding: 4px 11px;
             border: none;
-            border-radius: 6px;
+            border-radius: 5px;
             font-size: 15px;
             color: #E7E9EA;
             background: rgba(255, 255, 255, 0.1);
-            width: 274px;
-            height: 34px;
+            width: 280px;
+            height: 45.54px;
             outline: none;
         }
     }
@@ -1854,6 +1858,9 @@ footer {
                     margin: 0;
                     font-size: 16px;
                     line-height: 28px;
+                    font-family: 'Newake-Font-Regular' !important;
+                    font-weight: 400;
+                    color: #fff!important;
                 }
             }
             .social-icons {
@@ -3052,12 +3059,16 @@ i.font60 {
     font-weight: 600;
     display: block;
     color: $color !important;
+    font-family: 'Manrope-Regular';
+    font-weight: 400;
 }
 
 .nft__item_price span {
     margin-left: 10px;
     color: $white;
     font-weight: 700;
+    font-family: 'Manrope-Regular';
+    font-weight: 400;
 }
 
 .nft__item_action {
@@ -3065,6 +3076,8 @@ i.font60 {
     span {
         font-weight: bold;
         color: $color;
+        font-family: 'Manrope-Regular';
+        font-weight: 400;
     }
 }
 
@@ -3090,11 +3103,11 @@ i.font60 {
     position: absolute;
     right: 20px;
     background: #000000;
-    padding: 6px 10px;
-    border-radius: 30px;
+    padding: 12px 16px;
+    border-radius: 50px;
     -moz-border-radius: 30px;
     -webkit-border-radius: 30px;
-    border: solid 2px $color;
+    border: solid 1px $color;
     z-index: 1;
     color: #03FFB3;
     .Clock-days {
@@ -4580,4 +4593,34 @@ img.img-rounded {
     .h-vh {
         height: 80vh!important;
     }
+}
+
+
+// Custom fonts
+@font-face {
+    font-family: 'Manrope-Regular';
+    src: local("Manrope-Regular"), url('../fonts/Manrope-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'Newake-Font-Regular';
+    src: local("Newake-Font-Regular"), url('../fonts/Newake-Font-Regular.ttf') format("truetype");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, .textBold {
+    font-family: 'Newake-Font-Regular' !important;
+    font-weight: 400 !important;
+}
+
+p, input, label, .btn, .btn-main {
+    font-family: 'Manrope-Regular' !important;
+    font-weight: 400 !important;
+}
+.btn-main{
+    font-weight: 800 !important;
 }

@@ -17,7 +17,7 @@
     outline: 0;
     font-weight: 800;
     text-decoration: none;
-    padding: 6px 30px;
+    padding: 12px 20px;
     font-size: 14px;
     border: none;
     cursor: pointer;
@@ -102,10 +102,13 @@ p {
 .custom-link-btn {
     color: #03FFB3;
 }
+.custom-link-btn:hover a {
+    color: #03FFB3;
+}
 
 .cutom-p {
     color: #fff;
-    margin-top: 8px;
+    margin-top: 18px;
 }
 
 // Edit profile page
@@ -196,6 +199,10 @@ p {
 .quantitybold{
     font-weight: 500;
     color: #fff;
+}
+h1{
+    font-weight: 400;
+    font-size: 75px;
 }
 h2{
     font-size: 40px;

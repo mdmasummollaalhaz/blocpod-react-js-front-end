@@ -10,6 +10,10 @@ import './assets/style.scss';
 import App from './components/app';
 import * as serviceWorker from './serviceWorker';
 
+// Custom font
+import '../src/fonts/Manrope-VariableFont_wght.ttf';
+import '../src/fonts/Newake-Font-Regular.ttf';
+
 ReactDOM.render(
 	<App />, document.getElementById('root'));
 // If you want your app to work offline and load faster, you can change
