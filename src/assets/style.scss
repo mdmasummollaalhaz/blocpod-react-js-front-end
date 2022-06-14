@@ -381,7 +381,7 @@ h1,
 .h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    line-height: 1.2em;
+    line-height: 1.0em;
     letter-spacing: -1px;
 }
 
@@ -3201,11 +3201,11 @@ i.font60 {
 /*** author list ***/
 
 .author_list {
-    -moz-column-count: 3;
+    -moz-column-count: 4;
     -moz-column-gap: 20px;
-    -webkit-column-count: 3;
+    -webkit-column-count: 4;
     -webkit-column-gap: 20px;
-    column-count: 3;
+    column-count: 4;
     column-gap: 20px;
     li {
         margin-bottom: 30px;
@@ -3281,9 +3281,11 @@ i.font60 {
     display: block;
     color: #fff;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
     margin-top: 5px;
-    line-height: 1.4em;
+    line-height: 28px;
+    font-family: 'Newake-Font-Regular' !important;
+    font-weight: 400 !important;
 }
 
 .dark-scheme .icon-box span {
@@ -3670,7 +3672,7 @@ i.font60 {
             background: #f6f6f6;
             text-decoration: none;
             color: $black;
-            font-size: 15px;
+            font-size: 16px;
             cursor: poInter;
             -webkit-border-radius: 3px;
             &:before {
@@ -3716,8 +3718,8 @@ i.font60 {
         margin-bottom: 20px;
         >div {
             margin-right: 10px;
-            font-weight: 400;
-            padding: 2px 10px;
+            font-weight: 800;
+            padding: 8px 10px;
             font-size: 16px;
             text-align: center;
             min-width: 80px;
@@ -3741,10 +3743,18 @@ i.font60 {
         padding-left: 70px;
         color: #fff;
         font-weight: bold;
+        
+    }
+    .item_author .author_list_info span{
+        font-size: 20px;
+        line-height: 18px;
+        font-family: 'Newake-Font-Regular' !important;
+        font-weight: 400 !important;
     }
     .de_nav {
         text-align: left;
         margin-bottom: 30px;
+        text-transform: uppercase;
     }
 }
 

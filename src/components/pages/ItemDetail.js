@@ -169,10 +169,10 @@ return (
                                     <h6>Properties</h6>
                                     <div className="row">
                                         {
-                                            propertiesDatas.map(( item , index) =><div key={index} className="col-md-3 nftitemdetailsbox  py-2 px-2 text-center m-1" >
-                                               <p>{item.name}</p>
+                                            propertiesDatas.map(( item , index) =><div key={index} className="col-md-3 nftitemdetailsbox  py-4 px-2 text-center m-1" >
+                                               <p className="colorGray">{item.name}</p>
                                                <p className="nftdetailsbold">{item.coler}</p>
-                                               <p>{item.limit}</p>
+                                               <p  className="colorGray">{item.limit}</p>
                                             </div>
                                             )
                                         }
@@ -181,7 +181,7 @@ return (
                                 <div className="spacer-40"></div>
                                     {/* Pricing Section */}
                                 <div>
-                                        <h6>Pricing</h6>
+                                        <h6 className="pricingText">Pricing</h6>
                                         <div className="text-white">
                                             <i className="fa fa-sort" aria-hidden="true"></i>
                                             <span>0.059</span>
