@@ -4613,6 +4613,11 @@ img.img-rounded {
 }
 
 @font-face {
+    font-family: 'Manrope-ExtraBold';
+    src: local("Manrope-ExtraBold"), url('../fonts/Manrope-ExtraBold.ttf') format("truetype");
+}
+
+@font-face {
     font-family: 'Newake-Font-Regular';
     src: local("Newake-Font-Regular"), url('../fonts/Newake-Font-Regular.ttf') format("truetype");
 }
@@ -4627,10 +4632,11 @@ h6, .textBold {
     font-weight: 400 !important;
 }
 
-p, input, label, .btn, .btn-main {
+p, input, label {
     font-family: 'Manrope-Regular' !important;
     font-weight: 400 !important;
 }
-.btn-main{
+.btn-main,  .btn, .custm-mini-button, .de_nav li span{
+    font-family: 'Manrope-ExtraBold' !important;
     font-weight: 800 !important;
 }

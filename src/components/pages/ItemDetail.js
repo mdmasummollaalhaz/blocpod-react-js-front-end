@@ -27,7 +27,7 @@ const GlobalStyles = createGlobalStyle`
 const Colection= function() {
     const propertiesDatas = [
         {
-            name:  "Bakground",
+            name:  "Background",
             coler: "Yellowing Sky",
             limit:"85% have this trait"
         },
@@ -169,7 +169,7 @@ return (
                                     <h6>Properties</h6>
                                     <div className="row">
                                         {
-                                            propertiesDatas.map(( item , index) =><div key={index} className="col-md-3 nftitemdetailsbox  py-4 px-2 text-center m-1" >
+                                            propertiesDatas.map(( item , index) =><div key={index} className="col-md-3 nftitemdetailsbox  py-4 px-2 text-center m-2" >
                                                <p className="colorGray">{item.name}</p>
                                                <p className="nftdetailsbold">{item.coler}</p>
                                                <p  className="colorGray">{item.limit}</p>
@@ -182,10 +182,10 @@ return (
                                     {/* Pricing Section */}
                                 <div>
                                         <h6 className="pricingText">Pricing</h6>
-                                        <div className="text-white">
-                                            <i className="fa fa-sort" aria-hidden="true"></i>
-                                            <span>0.059</span>
-                                            <small>($253.67)</small>
+                                        <div className="text-white nftPrice">
+                                            {/* <i className="fa fa-sort" aria-hidden="true"></i> */}
+                                            <span className="price">0.059</span>
+                                            <small className="price">($253.67)</small>
                                             <div className="d-flex mt-3">
                                                <span className="btn-main lead me-3" onClick={handleBuyModal}>Buy Now</span>
                                                <span className="btn-main lead btn-border" onClick={handlePriceModal}>Place a Bid</span>

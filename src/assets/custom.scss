@@ -69,7 +69,7 @@ p {
     background-color: #000;
     // border: 1px solid rgb(3 255 179 / 17%);
     border-radius: 10px;
-    width: 31%;
+    width: 29%;
 }
 .nft__item_like span {
     color: #ffffff;
@@ -101,6 +101,12 @@ p {
     font-weight: 400 !important;
     font-size: 16px!important;
     line-height:  14.4px;
+    color: #7D7D7D!important;
+}
+.nftPrice, .nftPrice .price{
+    font-family: 'Newake-Font-Regular' !important;
+    font-weight: 400 !important;
+    font-size: 36px;
 }
 
 
@@ -211,6 +217,12 @@ p {
     font-weight: 500;
     color: #fff;
 }
+// Top seller
+.authorName{
+    font-family: 'Newake-Font-Regular' !important;
+    font-weight: 400 !important;
+}
+
 h1{
     font-weight: 400;
     font-size: 75px;
